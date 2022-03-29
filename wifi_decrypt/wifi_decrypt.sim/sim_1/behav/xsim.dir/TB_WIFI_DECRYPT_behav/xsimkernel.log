@@ -1,7 +1,0 @@
-Running: xsim.dir/TB_WIFI_DECRYPT_behav/xsimk.exe -simmode gui -wdb TB_WIFI_DECRYPT_behav.wdb -simrunnum 0 -socket 54788
-Design successfully loaded
-Design Loading Memory Usage: 13516 KB (Peak: 13516 KB)
-Design Loading CPU Usage: 62 ms
-Simulation completed
-Simulation Memory Usage: 24676 KB (Peak: 24676 KB)
-Simulation CPU Usage: 1788566 ms
