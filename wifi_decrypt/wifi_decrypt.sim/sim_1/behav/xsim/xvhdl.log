@@ -1,0 +1,53 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/bin2gray.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BIN2GRAY
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/clkdiv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CLKDIV
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/de0_nano_const_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity count_bin
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FIFO_ASYNC
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FIFO_SYNC
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_pkt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity HMAC_SHA1_VECTOR
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/key_schedule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity KEY_SCHEDULE
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity MMCM_BASE_CLK
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PBKDF2_SHA1
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PBKDF2_SHA1_F
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_get_from_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PMK_GET_FROM_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_put_to_fifo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PMK_PUT_TO_FIFO
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_verify.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PMK_VERIFY
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_const_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd_virtual.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sd_virtual
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SHA1_CALC
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SHA1_CORE
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SHA1_IBUFFER
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_schedule.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SHA1_SCHEDULE
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/simple_dual_one_clock.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SIMPLE_DUAL_ONE_CLOCK
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/simple_dual_two_clocks.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SIMPLE_DUAL_TWO_CLOCKS
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/sync_crossclk.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SYNC_CROSSCLK
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sync_pulse.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity SYNC_PULSE
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/uart_tx.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity UART_TX
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity WIFI_DECRYPT
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/tb_wifi_decrypt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_WIFI_DECRYPT

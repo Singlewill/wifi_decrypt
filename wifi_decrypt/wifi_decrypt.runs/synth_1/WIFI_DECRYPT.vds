@@ -1,0 +1,2352 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Jan 22 09:55:37 2018
+# Process ID: 1729
+# Current directory: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1
+# Command line: vivado -log WIFI_DECRYPT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WIFI_DECRYPT.tcl
+# Log file: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1/WIFI_DECRYPT.vds
+# Journal file: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source WIFI_DECRYPT.tcl -notrace
+Command: synth_design -top WIFI_DECRYPT -part xc7a200tsbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1735 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1280.219 ; gain = 87.000 ; free physical = 3783 ; free virtual = 8149
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'WIFI_DECRYPT' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:31]
+INFO: [Synth 8-3491] module 'MMCM_BASE_CLK' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:6' bound to instance 'U_MMCM_BASE_50M' of component 'MMCM_BASE_CLK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:368]
+INFO: [Synth 8-638] synthesizing module 'MMCM_BASE_CLK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:15]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 8.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 16 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: float 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'U_MMCME2_BASE' to cell 'MMCME2_BASE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:26]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-113] binding component instance 'U_CLKIN_IBUF' to cell 'IBUF' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:62]
+INFO: [Synth 8-113] binding component instance 'U_CLKF_BUF' to cell 'BUFG' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:68]
+INFO: [Synth 8-113] binding component instance 'U_CLKOUT0_BUF' to cell 'BUFG' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:74]
+INFO: [Synth 8-113] binding component instance 'U_CLKOUT1_BUF' to cell 'BUFG' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'MMCM_BASE_CLK' (1#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/mmcm_base_clk.vhd:15]
+INFO: [Synth 8-3491] module 'sd_v3' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:38' bound to instance 'U_SD' of component 'sd_v3' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'sd_v3' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:84]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:42]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:127]
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:127]
+INFO: [Synth 8-3491] module 'simple_sd' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:98' bound to instance 'u_simple_sd' of component 'simple_sd' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'simple_sd' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:137]
+INFO: [Synth 8-3491] module 'sd_controller' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:207' bound to instance 'u_sd_controller' of component 'sd_controller' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:235]
+INFO: [Synth 8-638] synthesizing module 'sd_controller' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:256]
+INFO: [Synth 8-3491] module 'sd_transceiver' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:196' bound to instance 'u_sd_transceiver' of component 'sd_transceiver' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:423]
+INFO: [Synth 8-638] synthesizing module 'sd_transceiver' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:245]
+	Parameter length bound to: 7 - type: integer 
+	Parameter polynomial bound to: 7'b0001001 
+INFO: [Synth 8-3491] module 'crc' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:55' bound to instance 'u_cmd_crc7' of component 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:342]
+INFO: [Synth 8-638] synthesizing module 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:76]
+	Parameter length bound to: 7 - type: integer 
+	Parameter polynomial bound to: 7'b0001001 
+INFO: [Synth 8-256] done synthesizing module 'crc' (2#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:76]
+	Parameter length bound to: 16 - type: integer 
+	Parameter polynomial bound to: 16'b0001000000100001 
+INFO: [Synth 8-3491] module 'crc' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:55' bound to instance 'crc16_dat_i' of component 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:347]
+INFO: [Synth 8-638] synthesizing module 'crc__parameterized1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:76]
+	Parameter length bound to: 16 - type: integer 
+	Parameter polynomial bound to: 16'b0001000000100001 
+INFO: [Synth 8-256] done synthesizing module 'crc__parameterized1' (2#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:76]
+	Parameter length bound to: 16 - type: integer 
+	Parameter polynomial bound to: 16'b0001000000100001 
+INFO: [Synth 8-3491] module 'crc' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:55' bound to instance 'crc16_dat_i' of component 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:347]
+	Parameter length bound to: 16 - type: integer 
+	Parameter polynomial bound to: 16'b0001000000100001 
+INFO: [Synth 8-3491] module 'crc' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:55' bound to instance 'crc16_dat_i' of component 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:347]
+	Parameter length bound to: 16 - type: integer 
+	Parameter polynomial bound to: 16'b0001000000100001 
+INFO: [Synth 8-3491] module 'crc' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/crc.vhd:55' bound to instance 'crc16_dat_i' of component 'crc' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:347]
+	Parameter divisor bound to: 62 - type: integer 
+	Parameter phase bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'prescaler' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:38' bound to instance 'u_clk_en_init2' of component 'prescaler' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:355]
+INFO: [Synth 8-638] synthesizing module 'prescaler' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:53]
+	Parameter divisor bound to: 62 - type: integer 
+	Parameter phase bound to: 0 - type: integer 
+WARNING: [Synth 8-614] signal 'i_clk_en' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'prescaler' (3#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:53]
+	Parameter divisor bound to: 2 - type: integer 
+	Parameter phase bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'prescaler' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:38' bound to instance 'u_clk_en_init' of component 'prescaler' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:356]
+INFO: [Synth 8-638] synthesizing module 'prescaler__parameterized1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:53]
+	Parameter divisor bound to: 2 - type: integer 
+	Parameter phase bound to: 0 - type: integer 
+WARNING: [Synth 8-614] signal 'i_clk_en' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'prescaler__parameterized1' (3#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/prescaler.vhd:53]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:714]
+WARNING: [Synth 8-6014] Unused sequential element resp_var_reg[index] was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:644]
+WARNING: [Synth 8-6014] Unused sequential element resp_var_reg[arg] was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:644]
+INFO: [Synth 8-256] done synthesizing module 'sd_transceiver' (4#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_transceiver.vhd:245]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:860]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:891]
+WARNING: [Synth 8-614] signal 'cmd0' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:498]
+WARNING: [Synth 8-6014] Unused sequential element unit_state_dly_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:516]
+INFO: [Synth 8-256] done synthesizing module 'sd_controller' (5#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_controller.vhd:256]
+	Parameter n bound to: 50000 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/debounce.vhd:43' bound to instance 'cd_debounce' of component 'debounce' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:245]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/debounce.vhd:56]
+	Parameter n bound to: 50000 - type: integer 
+WARNING: [Synth 8-614] signal 'last' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/debounce.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/debounce.vhd:56]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:260]
+INFO: [Synth 8-3491] module 'tick_extend' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:37' bound to instance 'ctrl_tick_extend_1' of component 'tick_extend' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:294]
+INFO: [Synth 8-638] synthesizing module 'tick_extend' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'tick_extend' (7#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:51]
+INFO: [Synth 8-3491] module 'tick_extend' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:37' bound to instance 'ctrl_tick_extend_2' of component 'tick_extend' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:295]
+INFO: [Synth 8-3491] module 'tick_extend' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:37' bound to instance 'ctrl_tick_extend_3' of component 'tick_extend' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:296]
+INFO: [Synth 8-3491] module 'tick_extend' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/tick_extend.vhd:37' bound to instance 'ctrl_tick_extend_4' of component 'tick_extend' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:297]
+INFO: [Synth 8-3491] module 'one_shot' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:36' bound to instance 'fb_one_shot_1' of component 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:299]
+INFO: [Synth 8-638] synthesizing module 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'one_shot' (8#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:45]
+INFO: [Synth 8-3491] module 'one_shot' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:36' bound to instance 'fb_one_shot_2' of component 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:300]
+INFO: [Synth 8-3491] module 'one_shot' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:36' bound to instance 'fb_one_shot_3' of component 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:301]
+INFO: [Synth 8-3491] module 'one_shot' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:36' bound to instance 'fb_one_shot_4' of component 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:302]
+INFO: [Synth 8-3491] module 'one_shot' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/one_shot.vhd:36' bound to instance 'dat_one_shot' of component 'one_shot' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:303]
+INFO: [Synth 8-256] done synthesizing module 'simple_sd' (9#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/simple_sd.vhd:137]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'count_bin' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:42' bound to instance 'add_count' of component 'count_bin' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'count_bin' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:60]
+	Parameter bits bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'count_bin' (10#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:60]
+WARNING: [Synth 8-3848] Net ctrl_tick[reinit] in module/entity sd_v3 does not have driver. [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sd_v3' (11#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:84]
+INFO: [Synth 8-3491] module 'SYNC_PULSE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sync_pulse.vhd:4' bound to instance 'U_SD_START_SYNC' of component 'SYNC_PULSE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:410]
+INFO: [Synth 8-638] synthesizing module 'SYNC_PULSE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sync_pulse.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'SYNC_PULSE' (12#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sync_pulse.vhd:15]
+INFO: [Synth 8-3491] module 'SYNC_PULSE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sync_pulse.vhd:4' bound to instance 'U_SD_VALID_SYNC' of component 'SYNC_PULSE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:420]
+	Parameter DATA_WIDTH bound to: 512 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO_ASYNC' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:14' bound to instance 'U_KEY_FIFO' of component 'FIFO_ASYNC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:429]
+INFO: [Synth 8-638] synthesizing module 'FIFO_ASYNC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:38]
+	Parameter DATA_WIDTH bound to: 512 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 512 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'SIMPLE_DUAL_TWO_CLOCKS' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/simple_dual_two_clocks.vhd:8' bound to instance 'U_SIMPLE_DUAL_TWO_CLOCKS' of component 'SIMPLE_DUAL_TWO_CLOCKS' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'SIMPLE_DUAL_TWO_CLOCKS' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/simple_dual_two_clocks.vhd:25]
+	Parameter DATA_WIDTH bound to: 512 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/simple_dual_two_clocks.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'SIMPLE_DUAL_TWO_CLOCKS' (13#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/simple_dual_two_clocks.vhd:25]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BIN2GRAY' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/bin2gray.vhd:9' bound to instance 'U_GRAY_WR_NEXT' of component 'BIN2GRAY' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'BIN2GRAY' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/bin2gray.vhd:16]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BIN2GRAY' (14#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/bin2gray.vhd:16]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'BIN2GRAY' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/bin2gray.vhd:9' bound to instance 'U_GRAY_RD_NEXT' of component 'BIN2GRAY' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:126]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'SYNC_CROSSCLK' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/sync_crossclk.vhd:7' bound to instance 'U_RP_NEXT_SYNC' of component 'SYNC_CROSSCLK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'SYNC_CROSSCLK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/sync_crossclk.vhd:16]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SYNC_CROSSCLK' (15#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/sync_crossclk.vhd:16]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'SYNC_CROSSCLK' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/sync_crossclk.vhd:7' bound to instance 'U_WP_NEXT_SYNC' of component 'SYNC_CROSSCLK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'FIFO_ASYNC' (16#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:38]
+INFO: [Synth 8-3491] module 'KEY_SCHEDULE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/key_schedule.vhd:13' bound to instance 'U_KEY_SCHEDULE' of component 'KEY_SCHEDULE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:447]
+INFO: [Synth 8-638] synthesizing module 'KEY_SCHEDULE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/key_schedule.vhd:31]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/key_schedule.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'KEY_SCHEDULE' (17#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/key_schedule.vhd:31]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_0' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:464]
+INFO: [Synth 8-638] synthesizing module 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:29]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1_F' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:11' bound to instance 'U_PBKDF2_SHA1_F_ONE' of component 'PBKDF2_SHA1_F' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'PBKDF2_SHA1_F' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:27]
+	Parameter ITEMS bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'HMAC_SHA1_VECTOR' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:14' bound to instance 'U_HMAC_SHA1_VECTOR' of component 'HMAC_SHA1_VECTOR' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'HMAC_SHA1_VECTOR' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:33]
+	Parameter ITEMS bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'SHA1_CORE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:14' bound to instance 'U_SHA1_CORE' of component 'SHA1_CORE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SHA1_CORE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:33]
+INFO: [Synth 8-3491] module 'SHA1_IBUFFER' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd:16' bound to instance 'U_SHA1_IBUFFER' of component 'SHA1_IBUFFER' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'SHA1_IBUFFER' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd:36]
+WARNING: [Synth 8-614] signal 'I_next' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd:280]
+WARNING: [Synth 8-6014] Unused sequential element in_size_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd:346]
+INFO: [Synth 8-256] done synthesizing module 'SHA1_IBUFFER' (18#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_ibuffer.vhd:36]
+INFO: [Synth 8-3491] module 'SHA1_CALC' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:29' bound to instance 'U_SHA1_CALC' of component 'SHA1_CALC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'SHA1_CALC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:47]
+INFO: [Synth 8-3491] module 'SHA1_SCHEDULE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_schedule.vhd:13' bound to instance 'U_SHA1_SCHEDULE' of component 'SHA1_SCHEDULE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'SHA1_SCHEDULE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_schedule.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'SHA1_SCHEDULE' (19#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_schedule.vhd:22]
+WARNING: [Synth 8-614] signal 's_state_2' is read in the process but is not in the sensitivity list [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:300]
+WARNING: [Synth 8-6014] Unused sequential element s_input_1_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:179]
+WARNING: [Synth 8-6014] Unused sequential element s_valid_3_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:240]
+WARNING: [Synth 8-6014] Unused sequential element s_last_3_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:287]
+WARNING: [Synth 8-6014] Unused sequential element H0_next_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:363]
+WARNING: [Synth 8-6014] Unused sequential element H1_next_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:364]
+WARNING: [Synth 8-6014] Unused sequential element H2_next_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:365]
+WARNING: [Synth 8-6014] Unused sequential element H3_next_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:366]
+WARNING: [Synth 8-6014] Unused sequential element H4_next_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:367]
+INFO: [Synth 8-256] done synthesizing module 'SHA1_CALC' (20#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_calc.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'SHA1_CORE' (21#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element xor_data_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'HMAC_SHA1_VECTOR' (22#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:33]
+WARNING: [Synth 8-6014] Unused sequential element tmp2_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'PBKDF2_SHA1_F' (23#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:27]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1_F' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1_f.vhd:11' bound to instance 'U_PBKDF2_SHA1_F_TWO' of component 'PBKDF2_SHA1_F' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'PBKDF2_SHA1' (24#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:29]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PBKDF2_SHA1' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pbkdf2_sha1.vhd:11' bound to instance 'U_PBKDF2_SHA1_i' of component 'PBKDF2_SHA1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:478]
+INFO: [Synth 8-3491] module 'PMK_PUT_TO_FIFO' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_put_to_fifo.vhd:15' bound to instance 'U_PMK_PUT_TO_FIFO' of component 'PMK_PUT_TO_FIFO' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:492]
+INFO: [Synth 8-638] synthesizing module 'PMK_PUT_TO_FIFO' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_put_to_fifo.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'PMK_PUT_TO_FIFO' (25#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_put_to_fifo.vhd:31]
+	Parameter DATA_WIDTH bound to: 768 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'FIFO_SYNC' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd:11' bound to instance 'U_PMK_FIFO' of component 'FIFO_SYNC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:504]
+INFO: [Synth 8-638] synthesizing module 'FIFO_SYNC' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd:36]
+	Parameter DATA_WIDTH bound to: 768 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 768 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SIMPLE_DUAL_ONE_CLOCK' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/simple_dual_one_clock.vhd:10' bound to instance 'U_RAM' of component 'SIMPLE_DUAL_ONE_CLOCK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'SIMPLE_DUAL_ONE_CLOCK' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/simple_dual_one_clock.vhd:27]
+	Parameter DATA_WIDTH bound to: 768 - type: integer 
+	Parameter ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/simple_dual_one_clock.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'SIMPLE_DUAL_ONE_CLOCK' (26#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/simple_dual_one_clock.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'FIFO_SYNC' (27#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_sync/fifo_sync.vhd:36]
+INFO: [Synth 8-3491] module 'PMK_GET_FROM_FIFO' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_get_from_fifo.vhd:14' bound to instance 'U_PMK_GET_FROM_FIFO' of component 'PMK_GET_FROM_FIFO' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:521]
+INFO: [Synth 8-638] synthesizing module 'PMK_GET_FROM_FIFO' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_get_from_fifo.vhd:32]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_get_from_fifo.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'PMK_GET_FROM_FIFO' (28#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_get_from_fifo.vhd:32]
+INFO: [Synth 8-3491] module 'PMK_VERIFY' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_verify.vhd:15' bound to instance 'U_PMK_VERIFY' of component 'PMK_VERIFY' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:537]
+INFO: [Synth 8-638] synthesizing module 'PMK_VERIFY' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_verify.vhd:39]
+	Parameter ITEMS bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'HMAC_SHA1_VECTOR' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:14' bound to instance 'U_HMAC_SHA1_VECTOR' of component 'HMAC_SHA1_VECTOR' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_verify.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'HMAC_SHA1_VECTOR__parameterized1' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:33]
+	Parameter ITEMS bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'SHA1_CORE' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sha1_core.vhd:14' bound to instance 'U_SHA1_CORE' of component 'SHA1_CORE' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:85]
+WARNING: [Synth 8-6014] Unused sequential element xor_data_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:127]
+INFO: [Synth 8-256] done synthesizing module 'HMAC_SHA1_VECTOR__parameterized1' (28#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/hmac_sha1_vector.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'PMK_VERIFY' (29#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/pmk_verify.vhd:39]
+INFO: [Synth 8-3491] module 'CLKDIV' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/clkdiv.vhd:10' bound to instance 'U_CLKDIV' of component 'CLKDIV' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:557]
+INFO: [Synth 8-638] synthesizing module 'CLKDIV' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/clkdiv.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'CLKDIV' (30#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/clkdiv.vhd:18]
+INFO: [Synth 8-3491] module 'UART_TX' declared at '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/uart_tx.vhd:13' bound to instance 'U_UART_TX' of component 'UART_TX' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:564]
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/uart_tx.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (31#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/uart/uart_tx.vhd:25]
+INFO: [Synth 8-226] default block is never used [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:588]
+WARNING: [Synth 8-6014] Unused sequential element ctl_state_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:624]
+INFO: [Synth 8-256] done synthesizing module 'WIFI_DECRYPT' (32#1) [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/wifi_decrypt.vhd:31]
+WARNING: [Synth 8-3331] design SHA1_IBUFFER has unconnected port I_datalen[7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1699.891 ; gain = 506.672 ; free physical = 3429 ; free virtual = 7819
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_simple_sd:ctrl_tick[reinit] to constant 0 [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/sd_v3.vhd:156]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1699.891 ; gain = 506.672 ; free physical = 3503 ; free virtual = 7895
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt.xdc]
+Finished Parsing XDC File [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/WIFI_DECRYPT_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/WIFI_DECRYPT_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2439.984 ; gain = 0.000 ; free physical = 2532 ; free virtual = 7019
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:16 ; elapsed = 00:01:35 . Memory (MB): peak = 2439.984 ; gain = 1246.766 ; free physical = 3069 ; free virtual = 7557
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:16 ; elapsed = 00:01:35 . Memory (MB): peak = 2443.902 ; gain = 1250.684 ; free physical = 3069 ; free virtual = 7557
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:16 ; elapsed = 00:01:35 . Memory (MB): peak = 2443.902 ; gain = 1250.684 ; free physical = 3067 ; free virtual = 7554
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "o_clk_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cmd_fb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_rst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_shift" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sd_cmd_reg0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "resp_stat" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp_stat" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resp[index]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "csd" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "dat_state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_state" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "crc_dat_rst" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_dat_en" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_dat_shift" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[511]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[510]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[509]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[508]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[507]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[506]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[505]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[504]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[503]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[502]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[501]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[500]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[499]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[498]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[497]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[496]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[495]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[494]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[493]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[492]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[491]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[490]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[489]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[488]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[487]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[486]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[485]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[484]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[483]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[482]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[481]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[480]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[479]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[478]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[477]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[476]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[475]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[474]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[473]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[472]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[471]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[470]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[469]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[468]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[467]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[466]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[465]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[464]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[463]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[462]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[461]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[460]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[459]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[458]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[457]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[456]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[455]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[454]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[453]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[452]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[451]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[450]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[449]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[448]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[447]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[446]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[445]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[444]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[443]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[442]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[441]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[440]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[439]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[438]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[437]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[436]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[435]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[434]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[433]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[432]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[431]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[430]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[429]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[428]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[427]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[426]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[425]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[424]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[423]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dat_block_read_reg[422]" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-802] inferred FSM for state register 'init_state_reg' in module 'sd_controller'
+INFO: [Synth 8-5544] ROM "cmd_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_start_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_stop_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "status_start_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_valid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unit_stat" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fb_tick[read_single]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fb_tick[read_multiple]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cmd_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cmd_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "unit_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unit_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unit_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "unit_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "unit_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "init_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_multiple_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "rca" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wide_bus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "allow_cmd_error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "unit_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "init_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "init_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "init_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "init_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_single_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_single_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "last" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cd_reinit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:74]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:63]
+INFO: [Synth 8-5544] ROM "ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element wp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element rp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:113]
+INFO: [Synth 8-5546] ROM "rd_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "out_valid_tmp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "passphrase_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "symbol_cur" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuffer_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ibuffer_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "symbol_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "p_5_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_5_in" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'HMAC_SHA1_VECTOR'
+INFO: [Synth 8-5544] ROM "index" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plaintext" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'PBKDF2_SHA1_F'
+INFO: [Synth 8-5544] ROM "Done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hmac_data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "out_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'HMAC_SHA1_VECTOR__parameterized1'
+INFO: [Synth 8-5544] ROM "index" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "last" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "plaintext" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'pmk_state_reg' in module 'PMK_VERIFY'
+INFO: [Synth 8-5544] ROM "Ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hmac_key" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hmac_start" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pmk_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pmk_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Clk_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Clk_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'transmit_state_reg' in module 'UART_TX'
+INFO: [Synth 8-5544] ROM "bitcnt_t" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transmit_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transmit_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transmit_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'uart_tx_state_reg' in module 'WIFI_DECRYPT'
+INFO: [Synth 8-5544] ROM "uart_tx_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_init |                            00000 |                            00000
+           s_prepare_clk |                            00001 |                            00001
+                  s_cmd0 |                            00010 |                            00010
+                  s_cmd8 |                            00011 |                            00011
+                   s_hcs |                            00100 |                            00100
+                s_acmd41 |                            00101 |                            00101
+                  s_cmd2 |                            00110 |                            00110
+                  s_cmd3 |                            00111 |                            00111
+                   s_rca |                            01000 |                            01000
+                  s_cmd7 |                            01001 |                            01001
+                s_acmd42 |                            01010 |                            01010
+             s_bus_width |                            01011 |                            01011
+                 s_acmd6 |                            01100 |                            01100
+                 s_speed |                            01101 |                            01101
+           s_switch_func |                            01110 |                            01110
+                  s_cmd6 |                            01111 |                            01111
+         s_switch_status |                            10000 |                            10000
+          s_switch_delay |                            10001 |                            10001
+                s_finish |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'init_state_reg' using encoding 'sequential' in module 'sd_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 key_xor |                              001 |                              001
+                key_calc |                              010 |                              100
+            addr_load_on |                              011 |                              101
+               addr_calc |                              100 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'HMAC_SHA1_VECTOR'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+             pre_load_on |                              001 |                              001
+                pre_calc |                              010 |                              010
+                 load_on |                              011 |                              011
+                load_off |                              100 |                              100
+                    calc |                              101 |                              101
+                    over |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'PBKDF2_SHA1_F'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                 key_xor |                              001 |                              001
+                key_calc |                              010 |                              100
+            addr_load_on |                              011 |                              101
+               addr_calc |                              100 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'HMAC_SHA1_VECTOR__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                pmk_idle |                              000 |                              000
+            pmk_kck_load |                              001 |                              001
+             pmk_kck_off |                              010 |                              010
+            pmk_kck_calc |                              011 |                              011
+            pmk_mic_load |                              100 |                              100
+             pmk_mic_off |                              101 |                              101
+              pmk_verify |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pmk_state_reg' using encoding 'sequential' in module 'PMK_VERIFY'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  x_idle |                              000 |                              000
+                 x_start |                              001 |                              001
+                 x_shift |                              010 |                              011
+                  x_wait |                              011 |                              010
+                  x_stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'transmit_state_reg' using encoding 'sequential' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 tx_wait |                               00 |                              000
+                tx_send1 |                               01 |                              001
+                tx_send2 |                               10 |                              010
+            tx_send_done |                               11 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'uart_tx_state_reg' using encoding 'sequential' in module 'WIFI_DECRYPT'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:51 ; elapsed = 00:04:28 . Memory (MB): peak = 2443.902 ; gain = 1250.684 ; free physical = 835 ; free virtual = 5335
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |MMCM_BASE_CLK__GC0   |           1|         5|
+|2     |sd_transceiver__GB0  |           1|     35948|
+|3     |sd_transceiver__GB1  |           1|      8706|
+|4     |sd_transceiver__GB2  |           1|     15215|
+|5     |sd_transceiver__GB3  |           1|     18571|
+|6     |sd_transceiver__GB4  |           1|     21314|
+|7     |sd_transceiver__GB5  |           1|     39329|
+|8     |sd_transceiver__GB6  |           1|     34305|
+|9     |sd_transceiver__GB7  |           1|     45150|
+|10    |sd_transceiver__GB8  |           1|     24948|
+|11    |sd_transceiver__GB9  |           1|     23279|
+|12    |sd_transceiver__GB10 |           1|     20363|
+|13    |sd_transceiver__GB11 |           1|     67150|
+|14    |sd_transceiver__GB12 |           1|     23659|
+|15    |sd_transceiver__GB13 |           1|     23612|
+|16    |sd_transceiver__GB14 |           1|     30228|
+|17    |sd_transceiver__GB15 |           1|     35193|
+|18    |sd_transceiver__GB16 |           1|     11225|
+|19    |sd_transceiver__GB17 |           1|     15089|
+|20    |sd_transceiver__GB18 |           1|     14931|
+|21    |sd_transceiver__GB19 |           1|     21792|
+|22    |sd_transceiver__GB20 |           1|     41364|
+|23    |sd_transceiver__GB21 |           1|     51941|
+|24    |sd_transceiver__GB22 |           1|     65377|
+|25    |sd_transceiver__GB23 |           1|     35678|
+|26    |sd_transceiver__GB24 |           1|      8839|
+|27    |sd_transceiver__GB25 |           1|     11801|
+|28    |sd_transceiver__GB26 |           1|     15768|
+|29    |sd_transceiver__GB27 |           1|     29373|
+|30    |sd_transceiver__GB28 |           1|     37956|
+|31    |sd_transceiver__GB29 |           1|     46817|
+|32    |sd_transceiver__GB30 |           1|     55099|
+|33    |sd_transceiver__GB31 |           1|     15787|
+|34    |sd_transceiver__GB32 |           1|     18278|
+|35    |sd_transceiver__GB33 |           1|     50474|
+|36    |sd_transceiver__GB34 |           1|     65623|
+|37    |sd_transceiver__GB35 |           1|     31672|
+|38    |sd_transceiver__GB36 |           1|     39831|
+|39    |sd_controller__GC0   |           1|      2388|
+|40    |simple_sd__GC0       |           1|       471|
+|41    |sd_v3__GCB0          |           1|     28990|
+|42    |sd_v3__GCB1          |           1|      8176|
+|43    |sd_v3__GCB2          |           1|     12264|
+|44    |sd_v3__GCB3          |           1|     16352|
+|45    |sd_v3__GCB4          |           1|     16352|
+|46    |sd_v3__GCB5          |           1|     20440|
+|47    |sd_v3__GCB6          |           1|     28616|
+|48    |sd_v3__GCB7          |           1|     28616|
+|49    |sd_v3__GCB8          |           1|      8176|
+|50    |sd_v3__GCB9          |           1|     32706|
+|51    |sd_v3__GCB10         |           1|     12264|
+|52    |sd_v3__GCB11         |           1|     28616|
+|53    |sd_v3__GCB12         |           1|     12264|
+|54    |sd_v3__GCB14         |           1|     12264|
+|55    |PBKDF2_SHA1_F        |           2|     15475|
+|56    |PBKDF2_SHA1__GC0     |           1|       518|
+|57    |WIFI_DECRYPT__GCB0   |           1|     23079|
+|58    |WIFI_DECRYPT__GCB1   |           1|     18290|
+|59    |WIFI_DECRYPT__GCB2   |           1|     11162|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 29    
+	   3 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 29    
+	   2 Input     32 Bit       Adders := 145   
+	   3 Input     27 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 28    
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 58    
+	   2 Input      6 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 62    
+	   2 Input      3 Bit       Adders := 30    
+	   4 Input      3 Bit       Adders := 29    
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 29    
+	   4 Input     32 Bit         XORs := 29    
+	   2 Input     16 Bit         XORs := 4     
+	   2 Input      8 Bit         XORs := 2416  
+	   2 Input      7 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 17    
++---Registers : 
+	              768 Bit    Registers := 2     
+	              544 Bit    Registers := 29    
+	              512 Bit    Registers := 143   
+	              256 Bit    Registers := 16    
+	              160 Bit    Registers := 171   
+	              136 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               64 Bit    Registers := 29    
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 351   
+	               26 Bit    Registers := 2     
+	               16 Bit    Registers := 6     
+	               13 Bit    Registers := 28    
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 575   
+	                7 Bit    Registers := 59    
+	                6 Bit    Registers := 10    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 66    
+	                3 Bit    Registers := 38    
+	                2 Bit    Registers := 126   
+	                1 Bit    Registers := 506   
++---RAMs : 
+	              16K Bit         RAMs := 1     
+	              12K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 30    
+	   2 Input    512 Bit        Muxes := 89    
+	   5 Input    512 Bit        Muxes := 29    
+	   7 Input    512 Bit        Muxes := 31    
+	   2 Input    160 Bit        Muxes := 29    
+	   5 Input    160 Bit        Muxes := 29    
+	   7 Input    160 Bit        Muxes := 56    
+	  14 Input    136 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 58    
+	  14 Input     40 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 641   
+	  19 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 59    
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 30    
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 21    
+	  14 Input     26 Bit        Muxes := 1     
+	   3 Input     26 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 13    
+	  19 Input     16 Bit        Muxes := 1     
+	   7 Input     13 Bit        Muxes := 28    
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3637  
+	   4 Input      8 Bit        Muxes := 513   
+	   6 Input      8 Bit        Muxes := 1     
+	  19 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 116   
+	   5 Input      8 Bit        Muxes := 29    
+	   7 Input      8 Bit        Muxes := 29    
+	   2 Input      7 Bit        Muxes := 119   
+	   4 Input      7 Bit        Muxes := 29    
+	   2 Input      6 Bit        Muxes := 3     
+	  19 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	  14 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 5     
+	  25 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 60    
+	   2 Input      4 Bit        Muxes := 120   
+	  19 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 33    
+	  19 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 29    
+	  11 Input      3 Bit        Muxes := 29    
+	  12 Input      3 Bit        Muxes := 29    
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 75    
+	   4 Input      2 Bit        Muxes := 7     
+	   5 Input      2 Bit        Muxes := 91    
+	  19 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 29    
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2116  
+	   5 Input      1 Bit        Muxes := 712   
+	   4 Input      1 Bit        Muxes := 561   
+	   3 Input      1 Bit        Muxes := 10    
+	  14 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 21    
+	  19 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 233   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module WIFI_DECRYPT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+Module crc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      7 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module crc__parameterized1__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module crc__parameterized1__2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module crc__parameterized1__3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module crc__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module prescaler__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module prescaler 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sd_transceiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     27 Bit       Adders := 1     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	              136 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               26 Bit    Registers := 2     
+	                8 Bit    Registers := 512   
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  14 Input    136 Bit        Muxes := 1     
+	  14 Input     40 Bit        Muxes := 1     
+	   4 Input     26 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 21    
+	  14 Input     26 Bit        Muxes := 1     
+	   3 Input     26 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3602  
+	   4 Input      8 Bit        Muxes := 512   
+	  14 Input      5 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1569  
+	   5 Input      1 Bit        Muxes := 387   
+	   4 Input      1 Bit        Muxes := 389   
+	   3 Input      1 Bit        Muxes := 8     
+	  14 Input      1 Bit        Muxes := 4     
+	  18 Input      1 Bit        Muxes := 2     
+Module sd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  19 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	  19 Input     16 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	  19 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  19 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 31    
+	  19 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 10    
+	   5 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 61    
+	   6 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 7     
+	  19 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module tick_extend__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module tick_extend__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module tick_extend__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module tick_extend 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module one_shot__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module one_shot__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module one_shot__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module one_shot__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module one_shot 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module simple_sd 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module count_bin 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module sd_v3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 7     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 4     
+Module SHA1_IBUFFER__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   4 Input      3 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
+Module SHA1_SCHEDULE__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module SHA1_CALC__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
++---Registers : 
+	              544 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 21    
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module SHA1_CORE__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 1     
+Module HMAC_SHA1_VECTOR 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 64    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              160 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 1     
+	   5 Input    512 Bit        Muxes := 1     
+	   5 Input    160 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 11    
+Module PBKDF2_SHA1_F 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 20    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              160 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input    512 Bit        Muxes := 1     
+	   7 Input    160 Bit        Muxes := 2     
+	   7 Input     13 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 8     
+Module PBKDF2_SHA1 
+Detailed RTL Component Info : 
++---Registers : 
+	              256 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module SHA1_IBUFFER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   4 Input      3 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input    512 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 4     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 7     
+Module SHA1_SCHEDULE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+Module SHA1_CALC 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   4 Input     32 Bit         XORs := 1     
++---Registers : 
+	              544 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 21    
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module SHA1_CORE 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    160 Bit        Muxes := 1     
+Module HMAC_SHA1_VECTOR__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 64    
++---Registers : 
+	              512 Bit    Registers := 1     
+	              160 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 2     
+	   5 Input    512 Bit        Muxes := 1     
+	   5 Input    160 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 11    
+Module PMK_VERIFY 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 4     
+	              128 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input    512 Bit        Muxes := 3     
+	   2 Input    512 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 9     
+Module PMK_GET_FROM_FIFO 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	              256 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module SIMPLE_DUAL_ONE_CLOCK 
+Detailed RTL Component Info : 
++---Registers : 
+	              768 Bit    Registers := 1     
++---RAMs : 
+	              12K Bit         RAMs := 1     
+Module FIFO_SYNC 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 4     
+Module PMK_PUT_TO_FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              768 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module KEY_SCHEDULE 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	              512 Bit    Registers := 14    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 22    
+Module SIMPLE_DUAL_TWO_CLOCKS 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
++---RAMs : 
+	              16K Bit         RAMs := 1     
+Module BIN2GRAY__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module BIN2GRAY 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
+Module SYNC_CROSSCLK__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 2     
+Module SYNC_CROSSCLK 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 2     
+Module FIFO_ASYNC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 4     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 6     
+Module CLKDIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SYNC_PULSE__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module SYNC_PULSE 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "dat_block_read[157]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[422]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[237]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[46]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[301]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[486]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[286]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[325]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cmd_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cd_debounce/last" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_sd_controlleri_38/\bus_width_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/fg1_reg[1]' (FDCE) to 'u_sd_controlleri_38/fg1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/fg1_reg[2]' (FDCE) to 'u_sd_controlleri_38/fg1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_sd_controlleri_38/\fg1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[0]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[1]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[2]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[3]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[4]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[5]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[6]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_sd_controlleri_38/status_width_reg[7]' (FDCE) to 'u_sd_controlleri_38/status_width_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_sd_controlleri_38/\status_width_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_sd_controlleri_38/\status_width_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_sd_controlleri_38/\unit_state_reg[2] )
+INFO: [Synth 8-5544] ROM "dat_block_read[358]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_block_read[436]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[350]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[93]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[206]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[173]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[28]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[5]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_block_read[180]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[142]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[85]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "dat_block_read[478]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[268]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[6]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[29]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[14]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[13]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[181]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[412]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[222]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[164]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dat_block_read[70]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "dat_block_read[109]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[76]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[398]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dat_block_read[165]2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "dat_block_read[349]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[205]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[172]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[220]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[174]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[461]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[204]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[428]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[158]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[302]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[141]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\resp_stat_reg[3] )
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[413]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[476]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[269]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[238]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[332]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "dat_block_read[366]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[364]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[92]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[414]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[477]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[334]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[333]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[110]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[493]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[284]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[108]2" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "dat_block_read[285]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dat_block_read[396]2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/sd/count_bin.vhd:63]
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[5] driven by constant 1
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[4] driven by constant 1
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[3] driven by constant 1
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[2] driven by constant 1
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[1] driven by constant 1
+WARNING: [Synth 8-3917] design sd_v3__GCB0 has port P[0] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\key2_2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ssid1_reg[7] )
+WARNING: [Synth 8-3331] design SHA1_CORE__1 has unconnected port Plaintext_len[7]
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[543]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[542]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[541]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[540]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[539]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[538]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[537]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[536]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[535]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[534]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[533]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[532]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[531]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[530]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[529]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[528]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[527]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[526]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[525]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[524]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[523]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[522]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[521]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[520]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[519]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[518]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[517]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[516]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[515]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[514]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[513]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[512]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[511]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[510]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[509]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[508]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[507]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[506]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[505]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[504]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[503]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[502]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[501]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[500]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[499]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[498]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[497]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[496]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[495]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[494]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[493]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[492]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[491]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[490]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[489]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[488]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[487]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[486]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[485]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[484]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[483]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[482]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[481]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[480]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[479]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[478]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[477]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[476]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[475]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[474]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[473]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[472]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[471]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[470]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[469]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[468]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[467]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[466]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[465]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[464]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[463]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[462]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[461]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[460]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[459]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[458]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[457]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[456]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[455]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[454]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[453]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[452]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[451]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[450]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[449]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[448]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[447]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[446]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[445]) is unused and will be removed from module SHA1_CALC__1.
+WARNING: [Synth 8-3332] Sequential element (w_work_reg[444]) is unused and will be removed from module SHA1_CALC__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design SHA1_CORE has unconnected port Plaintext_len[7]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[32] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[36] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[37] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[38] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[39] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[40] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[41] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[42] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[43] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[44] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[45] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[46] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[47] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[48] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[49] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[50] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[52] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[54] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[55] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[56] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[57] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[58] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[59] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[60] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[62] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[67] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[68] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U_PMK_VERIFY/hmac_key_reg[69] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-6014] Unused sequential element U_KEY_FIFO/wp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:112]
+WARNING: [Synth 8-6014] Unused sequential element U_KEY_FIFO/rp_reg was removed.  [/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/vhd/src/fifo_async/fifo_async.vhd:113]
+INFO: [Synth 8-5546] ROM "Clk_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Clk_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:36 ; elapsed = 00:07:53 . Memory (MB): peak = 2519.984 ; gain = 1326.766 ; free physical = 460 ; free virtual = 4639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SIMPLE_DUAL_ONE_CLOCK:  | RAM_reg    | 16 x 768(READ_FIRST)   | W |   | 16 x 768(WRITE_FIRST)  |   | R | Port A and B     | 0      | 11     | 
+|SIMPLE_DUAL_TWO_CLOCKS: | RAM_reg    | 32 x 512(NO_CHANGE)    | W |   | 32 x 512(WRITE_FIRST)  |   | R | Port A and B     | 1      | 7      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |MMCM_BASE_CLK__GC0   |           1|         5|
+|2     |sd_transceiver__GB0  |           1|      2275|
+|3     |sd_transceiver__GB1  |           1|       840|
+|4     |sd_transceiver__GB2  |           1|       731|
+|5     |sd_transceiver__GB3  |           1|      1123|
+|6     |sd_transceiver__GB4  |           1|      1655|
+|7     |sd_transceiver__GB5  |           1|       112|
+|8     |sd_transceiver__GB6  |           1|      1608|
+|9     |sd_transceiver__GB7  |           1|      4931|
+|10    |sd_transceiver__GB8  |           1|      1954|
+|11    |sd_transceiver__GB9  |           1|      1200|
+|12    |sd_transceiver__GB10 |           1|        65|
+|13    |sd_transceiver__GB11 |           1|       479|
+|14    |sd_transceiver__GB12 |           1|       286|
+|15    |sd_transceiver__GB13 |           1|       543|
+|16    |sd_transceiver__GB14 |           1|       257|
+|17    |sd_transceiver__GB15 |           1|      4837|
+|18    |sd_transceiver__GB16 |           1|       912|
+|19    |sd_transceiver__GB17 |           1|       644|
+|20    |sd_transceiver__GB18 |           1|      1329|
+|21    |sd_transceiver__GB19 |           1|      1718|
+|22    |sd_transceiver__GB20 |           1|       340|
+|23    |sd_transceiver__GB21 |           1|       138|
+|24    |sd_transceiver__GB22 |           1|       118|
+|25    |sd_transceiver__GB23 |           1|      4935|
+|26    |sd_transceiver__GB24 |           1|       834|
+|27    |sd_transceiver__GB25 |           1|       861|
+|28    |sd_transceiver__GB26 |           1|       998|
+|29    |sd_transceiver__GB27 |           1|       440|
+|30    |sd_transceiver__GB28 |           1|        99|
+|31    |sd_transceiver__GB29 |           1|       114|
+|32    |sd_transceiver__GB30 |           1|       312|
+|33    |sd_transceiver__GB31 |           1|       144|
+|34    |sd_transceiver__GB32 |           1|       219|
+|35    |sd_transceiver__GB33 |           1|       527|
+|36    |sd_transceiver__GB34 |           1|       371|
+|37    |sd_transceiver__GB35 |           1|       216|
+|38    |sd_transceiver__GB36 |           1|       319|
+|39    |sd_controller__GC0   |           1|       849|
+|40    |simple_sd__GC0       |           1|       101|
+|41    |sd_v3__GCB0          |           1|      4568|
+|42    |sd_v3__GCB1          |           1|      8176|
+|43    |sd_v3__GCB2          |           1|     10216|
+|44    |sd_v3__GCB3          |           1|     12256|
+|45    |sd_v3__GCB4          |           1|     12256|
+|46    |sd_v3__GCB5          |           1|     12760|
+|47    |sd_v3__GCB6          |           1|     15304|
+|48    |sd_v3__GCB7          |           1|     15304|
+|49    |sd_v3__GCB8          |           1|      8176|
+|50    |sd_v3__GCB9          |           1|     15810|
+|51    |sd_v3__GCB10         |           1|      9192|
+|52    |sd_v3__GCB11         |           1|     14280|
+|53    |sd_v3__GCB12         |           1|     10216|
+|54    |sd_v3__GCB14         |           1|     10216|
+|55    |PBKDF2_SHA1_F        |          28|     12751|
+|56    |PBKDF2_SHA1__GC0     |          13|       258|
+|57    |WIFI_DECRYPT__GCB0   |           1|     18523|
+|58    |WIFI_DECRYPT__GCB1   |           1|     18214|
+|59    |WIFI_DECRYPT__GCB2   |           1|      1440|
+|60    |PBKDF2_SHA1__GC0__1  |           1|       263|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:44 ; elapsed = 00:08:04 . Memory (MB): peak = 2662.273 ; gain = 1469.055 ; free physical = 268 ; free virtual = 4487
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][0]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][1]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][2]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][3]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][4]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][5]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][6]' (FDE) to 'U_PBKDF2_SHA1_0/U_PBKDF2_SHA1_F_ONE/hmac_data_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][0]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][1]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][2]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][3]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][4]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][5]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][6]' (FDE) to 'PBKDF2_SHA1_F__1:/hmac_data_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][0]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][1]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][2]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][3]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][4]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][5]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][6]' (FDE) to 'PBKDF2_SHA1_F__2:/hmac_data_reg[0][7]'
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:07:07 ; elapsed = 00:08:27 . Memory (MB): peak = 2941.523 ; gain = 1748.305 ; free physical = 192 ; free virtual = 4284
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|SIMPLE_DUAL_ONE_CLOCK:  | RAM_reg    | 16 x 768(READ_FIRST)   | W |   | 16 x 768(WRITE_FIRST)  |   | R | Port A and B     | 0      | 11     | 
+|SIMPLE_DUAL_TWO_CLOCKS: | RAM_reg    | 32 x 512(NO_CHANGE)    | W |   | 32 x 512(WRITE_FIRST)  |   | R | Port A and B     | 1      | 7      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------+------------+----------+
+|      |RTL Partition        |Replication |Instances |
++------+---------------------+------------+----------+
+|1     |MMCM_BASE_CLK__GC0   |           1|         5|
+|2     |sd_transceiver__GB0  |           1|      1910|
+|3     |sd_transceiver__GB1  |           1|       732|
+|4     |sd_transceiver__GB2  |           1|       668|
+|5     |sd_transceiver__GB3  |           1|       948|
+|6     |sd_transceiver__GB4  |           1|      1418|
+|7     |sd_transceiver__GB5  |           1|       112|
+|8     |sd_transceiver__GB6  |           1|      1353|
+|9     |sd_transceiver__GB7  |           1|      4361|
+|10    |sd_transceiver__GB8  |           1|      1620|
+|11    |sd_transceiver__GB9  |           1|      1034|
+|12    |sd_transceiver__GB10 |           1|        65|
+|13    |sd_transceiver__GB11 |           1|       416|
+|14    |sd_transceiver__GB12 |           1|       218|
+|15    |sd_transceiver__GB13 |           1|       482|
+|16    |sd_transceiver__GB14 |           1|       189|
+|17    |sd_transceiver__GB15 |           1|      4448|
+|18    |sd_transceiver__GB16 |           1|       777|
+|19    |sd_transceiver__GB17 |           1|       538|
+|20    |sd_transceiver__GB18 |           1|      1006|
+|21    |sd_transceiver__GB19 |           1|      1418|
+|22    |sd_transceiver__GB20 |           1|       258|
+|23    |sd_transceiver__GB21 |           1|       134|
+|24    |sd_transceiver__GB22 |           1|       112|
+|25    |sd_transceiver__GB23 |           1|      4367|
+|26    |sd_transceiver__GB24 |           1|       711|
+|27    |sd_transceiver__GB25 |           1|       749|
+|28    |sd_transceiver__GB26 |           1|       853|
+|29    |sd_transceiver__GB27 |           1|       364|
+|30    |sd_transceiver__GB28 |           1|        98|
+|31    |sd_transceiver__GB29 |           1|       112|
+|32    |sd_transceiver__GB30 |           1|       239|
+|33    |sd_transceiver__GB31 |           1|        86|
+|34    |sd_transceiver__GB32 |           1|       173|
+|35    |sd_transceiver__GB33 |           1|       427|
+|36    |sd_transceiver__GB34 |           1|       308|
+|37    |sd_transceiver__GB35 |           1|       162|
+|38    |sd_transceiver__GB36 |           1|       257|
+|39    |sd_controller__GC0   |           1|       847|
+|40    |simple_sd__GC0       |           1|       101|
+|41    |sd_v3__GCB0          |           1|      4566|
+|42    |sd_v3__GCB1          |           1|       112|
+|43    |sd_v3__GCB2          |           1|       168|
+|44    |sd_v3__GCB3          |           1|       224|
+|45    |sd_v3__GCB4          |           1|       224|
+|46    |sd_v3__GCB5          |           1|       280|
+|47    |sd_v3__GCB6          |           1|       392|
+|48    |sd_v3__GCB7          |           1|       392|
+|49    |sd_v3__GCB8          |           1|       112|
+|50    |sd_v3__GCB9          |           1|       450|
+|51    |sd_v3__GCB10         |           1|       168|
+|52    |sd_v3__GCB11         |           1|       392|
+|53    |sd_v3__GCB12         |           1|       168|
+|54    |sd_v3__GCB14         |           1|       168|
+|55    |PBKDF2_SHA1_F        |           1|     12719|
+|56    |PBKDF2_SHA1__GC0     |          13|       258|
+|57    |WIFI_DECRYPT__GCB0   |           1|     18507|
+|58    |WIFI_DECRYPT__GCB1   |           1|     18214|
+|59    |WIFI_DECRYPT__GCB2   |           1|      1440|
+|60    |PBKDF2_SHA1__GC0__1  |           1|       263|
+|61    |PBKDF2_SHA1_F__1     |          14|     12268|
+|62    |PBKDF2_SHA1_F__2     |          13|     12716|
++------+---------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'i_69/U_KEY_FIFO/U_WP_NEXT_SYNC/dout_l1_reg[5]' (FDR) to 'i_69/U_KEY_FIFO/wp_reg[5]'
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_69/U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:07:33 ; elapsed = 00:08:58 . Memory (MB): peak = 2953.449 ; gain = 1760.230 ; free physical = 204 ; free virtual = 4012
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |PBKDF2_SHA1_F      |           1|      6623|
+|2     |WIFI_DECRYPT__GCB0 |           1|      9075|
+|3     |WIFI_DECRYPT__GCB1 |           1|     11918|
+|4     |PBKDF2_SHA1_F__1   |          14|      6429|
+|5     |PBKDF2_SHA1_F__2   |          13|      6621|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance U_KEY_FIFO/U_SIMPLE_DUAL_TWO_CLOCKS/RAM_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6064] Net n_0_88727 is driving 88 big block pins (URAM, BRAM and DSP loads). Created 9 replicas of its driver. 
+INFO: [Synth 8-6064] Net \U_KEY_FIFO/Ena  is driving 60 big block pins (URAM, BRAM and DSP loads). Created 6 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:08:08 ; elapsed = 00:09:34 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 315 ; free virtual = 4034
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:09 ; elapsed = 00:09:35 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 317 ; free virtual = 4036
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:34 ; elapsed = 00:10:00 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 198 ; free virtual = 3917
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:35 ; elapsed = 00:10:01 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 198 ; free virtual = 3918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:41 ; elapsed = 00:10:08 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 204 ; free virtual = 3921
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:42 ; elapsed = 00:10:09 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 204 ; free virtual = 3921
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     3|
+|2     |CARRY4      |  2496|
+|3     |LUT1        |   412|
+|4     |LUT2        | 21258|
+|5     |LUT3        | 28503|
+|6     |LUT4        | 23795|
+|7     |LUT5        | 17218|
+|8     |LUT6        | 14895|
+|9     |MMCME2_BASE |     1|
+|10    |MUXF7       |   563|
+|11    |MUXF8       |    25|
+|12    |RAMB18E1    |     1|
+|13    |RAMB36E1_1  |     7|
+|14    |RAMB36E1_2  |    11|
+|15    |FDCE        | 32768|
+|16    |FDPE        |  4760|
+|17    |FDRE        | 84616|
+|18    |FDSE        |     1|
+|19    |LDC         |     1|
+|20    |IBUF        |     7|
+|21    |IOBUF       |     1|
+|22    |OBUF        |     2|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------------------------------+---------------------------------+-------+
+|      |Instance                                |Module                           |Cells  |
++------+----------------------------------------+---------------------------------+-------+
+|1     |top                                     |                                 | 231344|
+|2     |  \PBKDF2_SHA1_GEN[1].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_3                    |  13189|
+|3     |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_125                |   6563|
+|4     |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_132             |   4872|
+|5     |        U_SHA1_CORE                     |SHA1_CORE_133                    |   3352|
+|6     |          U_SHA1_CALC                   |SHA1_CALC_134                    |   2112|
+|7     |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_136                |    630|
+|8     |          U_SHA1_IBUFFER                |SHA1_IBUFFER_135                 |   1240|
+|9     |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_126                |   6370|
+|10    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_127             |   4808|
+|11    |        U_SHA1_CORE                     |SHA1_CORE_128                    |   3352|
+|12    |          U_SHA1_CALC                   |SHA1_CALC_129                    |   2112|
+|13    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_131                |    630|
+|14    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_130                 |   1240|
+|15    |  \PBKDF2_SHA1_GEN[2].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_4                    |  13189|
+|16    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_113                |   6563|
+|17    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_120             |   4872|
+|18    |        U_SHA1_CORE                     |SHA1_CORE_121                    |   3352|
+|19    |          U_SHA1_CALC                   |SHA1_CALC_122                    |   2112|
+|20    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_124                |    630|
+|21    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_123                 |   1240|
+|22    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_114                |   6370|
+|23    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_115             |   4808|
+|24    |        U_SHA1_CORE                     |SHA1_CORE_116                    |   3352|
+|25    |          U_SHA1_CALC                   |SHA1_CALC_117                    |   2112|
+|26    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_119                |    630|
+|27    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_118                 |   1240|
+|28    |  \PBKDF2_SHA1_GEN[3].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_5                    |  13189|
+|29    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_101                |   6563|
+|30    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_108             |   4872|
+|31    |        U_SHA1_CORE                     |SHA1_CORE_109                    |   3352|
+|32    |          U_SHA1_CALC                   |SHA1_CALC_110                    |   2112|
+|33    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_112                |    630|
+|34    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_111                 |   1240|
+|35    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_102                |   6370|
+|36    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_103             |   4808|
+|37    |        U_SHA1_CORE                     |SHA1_CORE_104                    |   3352|
+|38    |          U_SHA1_CALC                   |SHA1_CALC_105                    |   2112|
+|39    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_107                |    630|
+|40    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_106                 |   1240|
+|41    |  \PBKDF2_SHA1_GEN[4].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_6                    |  13189|
+|42    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_89                 |   6563|
+|43    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_96              |   4872|
+|44    |        U_SHA1_CORE                     |SHA1_CORE_97                     |   3352|
+|45    |          U_SHA1_CALC                   |SHA1_CALC_98                     |   2112|
+|46    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_100                |    630|
+|47    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_99                  |   1240|
+|48    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_90                 |   6370|
+|49    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_91              |   4808|
+|50    |        U_SHA1_CORE                     |SHA1_CORE_92                     |   3352|
+|51    |          U_SHA1_CALC                   |SHA1_CALC_93                     |   2112|
+|52    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_95                 |    630|
+|53    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_94                  |   1240|
+|54    |  \PBKDF2_SHA1_GEN[5].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_7                    |  13189|
+|55    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_77                 |   6563|
+|56    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_84              |   4872|
+|57    |        U_SHA1_CORE                     |SHA1_CORE_85                     |   3352|
+|58    |          U_SHA1_CALC                   |SHA1_CALC_86                     |   2112|
+|59    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_88                 |    630|
+|60    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_87                  |   1240|
+|61    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_78                 |   6370|
+|62    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_79              |   4808|
+|63    |        U_SHA1_CORE                     |SHA1_CORE_80                     |   3352|
+|64    |          U_SHA1_CALC                   |SHA1_CALC_81                     |   2112|
+|65    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_83                 |    630|
+|66    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_82                  |   1240|
+|67    |  \PBKDF2_SHA1_GEN[6].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_8                    |  13189|
+|68    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_65                 |   6563|
+|69    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_72              |   4872|
+|70    |        U_SHA1_CORE                     |SHA1_CORE_73                     |   3352|
+|71    |          U_SHA1_CALC                   |SHA1_CALC_74                     |   2112|
+|72    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_76                 |    630|
+|73    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_75                  |   1240|
+|74    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_66                 |   6370|
+|75    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_67              |   4808|
+|76    |        U_SHA1_CORE                     |SHA1_CORE_68                     |   3352|
+|77    |          U_SHA1_CALC                   |SHA1_CALC_69                     |   2112|
+|78    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_71                 |    630|
+|79    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_70                  |   1240|
+|80    |  \PBKDF2_SHA1_GEN[7].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_9                    |  13189|
+|81    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_53                 |   6563|
+|82    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_60              |   4872|
+|83    |        U_SHA1_CORE                     |SHA1_CORE_61                     |   3352|
+|84    |          U_SHA1_CALC                   |SHA1_CALC_62                     |   2112|
+|85    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_64                 |    630|
+|86    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_63                  |   1240|
+|87    |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_54                 |   6370|
+|88    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_55              |   4808|
+|89    |        U_SHA1_CORE                     |SHA1_CORE_56                     |   3352|
+|90    |          U_SHA1_CALC                   |SHA1_CALC_57                     |   2112|
+|91    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_59                 |    630|
+|92    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_58                  |   1240|
+|93    |  \PBKDF2_SHA1_GEN[8].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_10                   |  13189|
+|94    |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_41                 |   6563|
+|95    |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_48              |   4872|
+|96    |        U_SHA1_CORE                     |SHA1_CORE_49                     |   3352|
+|97    |          U_SHA1_CALC                   |SHA1_CALC_50                     |   2112|
+|98    |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_52                 |    630|
+|99    |          U_SHA1_IBUFFER                |SHA1_IBUFFER_51                  |   1240|
+|100   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_42                 |   6370|
+|101   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_43              |   4808|
+|102   |        U_SHA1_CORE                     |SHA1_CORE_44                     |   3352|
+|103   |          U_SHA1_CALC                   |SHA1_CALC_45                     |   2112|
+|104   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_47                 |    630|
+|105   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_46                  |   1240|
+|106   |  \PBKDF2_SHA1_GEN[9].U_PBKDF2_SHA1_i   |PBKDF2_SHA1_11                   |  13189|
+|107   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_29                 |   6563|
+|108   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_36              |   4872|
+|109   |        U_SHA1_CORE                     |SHA1_CORE_37                     |   3352|
+|110   |          U_SHA1_CALC                   |SHA1_CALC_38                     |   2112|
+|111   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_40                 |    630|
+|112   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_39                  |   1240|
+|113   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_30                 |   6370|
+|114   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_31              |   4808|
+|115   |        U_SHA1_CORE                     |SHA1_CORE_32                     |   3352|
+|116   |          U_SHA1_CALC                   |SHA1_CALC_33                     |   2112|
+|117   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_35                 |    630|
+|118   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_34                  |   1240|
+|119   |  \PBKDF2_SHA1_GEN[10].U_PBKDF2_SHA1_i  |PBKDF2_SHA1                      |  13189|
+|120   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_173                |   6563|
+|121   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_180             |   4872|
+|122   |        U_SHA1_CORE                     |SHA1_CORE_181                    |   3352|
+|123   |          U_SHA1_CALC                   |SHA1_CALC_182                    |   2112|
+|124   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_184                |    630|
+|125   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_183                 |   1240|
+|126   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_174                |   6370|
+|127   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_175             |   4808|
+|128   |        U_SHA1_CORE                     |SHA1_CORE_176                    |   3352|
+|129   |          U_SHA1_CALC                   |SHA1_CALC_177                    |   2112|
+|130   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_179                |    630|
+|131   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_178                 |   1240|
+|132   |  \PBKDF2_SHA1_GEN[11].U_PBKDF2_SHA1_i  |PBKDF2_SHA1_0                    |  13189|
+|133   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_161                |   6563|
+|134   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_168             |   4872|
+|135   |        U_SHA1_CORE                     |SHA1_CORE_169                    |   3352|
+|136   |          U_SHA1_CALC                   |SHA1_CALC_170                    |   2112|
+|137   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_172                |    630|
+|138   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_171                 |   1240|
+|139   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_162                |   6370|
+|140   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_163             |   4808|
+|141   |        U_SHA1_CORE                     |SHA1_CORE_164                    |   3352|
+|142   |          U_SHA1_CALC                   |SHA1_CALC_165                    |   2112|
+|143   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_167                |    630|
+|144   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_166                 |   1240|
+|145   |  \PBKDF2_SHA1_GEN[12].U_PBKDF2_SHA1_i  |PBKDF2_SHA1_1                    |  13189|
+|146   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_149                |   6563|
+|147   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_156             |   4872|
+|148   |        U_SHA1_CORE                     |SHA1_CORE_157                    |   3352|
+|149   |          U_SHA1_CALC                   |SHA1_CALC_158                    |   2112|
+|150   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_160                |    630|
+|151   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_159                 |   1240|
+|152   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_150                |   6370|
+|153   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_151             |   4808|
+|154   |        U_SHA1_CORE                     |SHA1_CORE_152                    |   3352|
+|155   |          U_SHA1_CALC                   |SHA1_CALC_153                    |   2112|
+|156   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_155                |    630|
+|157   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_154                 |   1240|
+|158   |  \PBKDF2_SHA1_GEN[13].U_PBKDF2_SHA1_i  |PBKDF2_SHA1_2                    |  13445|
+|159   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F_137                |   6563|
+|160   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_144             |   4872|
+|161   |        U_SHA1_CORE                     |SHA1_CORE_145                    |   3352|
+|162   |          U_SHA1_CALC                   |SHA1_CALC_146                    |   2112|
+|163   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_148                |    630|
+|164   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_147                 |   1240|
+|165   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_138                |   6370|
+|166   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_139             |   4808|
+|167   |        U_SHA1_CORE                     |SHA1_CORE_140                    |   3352|
+|168   |          U_SHA1_CALC                   |SHA1_CALC_141                    |   2112|
+|169   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_143                |    630|
+|170   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_142                 |   1240|
+|171   |  U_CLKDIV                              |CLKDIV                           |     31|
+|172   |  U_KEY_FIFO                            |FIFO_ASYNC                       |     83|
+|173   |    U_RP_NEXT_SYNC                      |SYNC_CROSSCLK                    |     21|
+|174   |    U_SIMPLE_DUAL_TWO_CLOCKS            |SIMPLE_DUAL_TWO_CLOCKS           |      8|
+|175   |    U_WP_NEXT_SYNC                      |SYNC_CROSSCLK_28                 |     25|
+|176   |  U_KEY_SCHEDULE                        |KEY_SCHEDULE                     |   9768|
+|177   |  U_MMCM_BASE_50M                       |MMCM_BASE_CLK                    |   2251|
+|178   |  U_PBKDF2_SHA1_0                       |PBKDF2_SHA1_12                   |  13193|
+|179   |    U_PBKDF2_SHA1_F_ONE                 |PBKDF2_SHA1_F                    |   6566|
+|180   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR_23              |   4872|
+|181   |        U_SHA1_CORE                     |SHA1_CORE_24                     |   3352|
+|182   |          U_SHA1_CALC                   |SHA1_CALC_25                     |   2112|
+|183   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_27                 |    630|
+|184   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_26                  |   1240|
+|185   |    U_PBKDF2_SHA1_F_TWO                 |PBKDF2_SHA1_F_18                 |   6370|
+|186   |      U_HMAC_SHA1_VECTOR                |HMAC_SHA1_VECTOR                 |   4808|
+|187   |        U_SHA1_CORE                     |SHA1_CORE_19                     |   3352|
+|188   |          U_SHA1_CALC                   |SHA1_CALC_20                     |   2112|
+|189   |            U_SHA1_SCHEDULE             |SHA1_SCHEDULE_22                 |    630|
+|190   |          U_SHA1_IBUFFER                |SHA1_IBUFFER_21                  |   1240|
+|191   |  U_PMK_FIFO                            |FIFO_SYNC                        |     33|
+|192   |    U_RAM                               |SIMPLE_DUAL_ONE_CLOCK            |     11|
+|193   |  U_PMK_GET_FROM_FIFO                   |PMK_GET_FROM_FIFO                |      7|
+|194   |  U_PMK_PUT_TO_FIFO                     |PMK_PUT_TO_FIFO                  |   1912|
+|195   |  U_PMK_VERIFY                          |PMK_VERIFY                       |   8293|
+|196   |    U_HMAC_SHA1_VECTOR                  |HMAC_SHA1_VECTOR__parameterized1 |   5322|
+|197   |      U_SHA1_CORE                       |SHA1_CORE                        |   3807|
+|198   |        U_SHA1_CALC                     |SHA1_CALC                        |   2427|
+|199   |          U_SHA1_SCHEDULE               |SHA1_SCHEDULE                    |    630|
+|200   |        U_SHA1_IBUFFER                  |SHA1_IBUFFER                     |   1380|
+|201   |  U_SD                                  |sd_v3                            |  23209|
+|202   |    add_count                           |count_bin                        |    145|
+|203   |    u_simple_sd                         |simple_sd                        |  19403|
+|204   |      cd_debounce                       |debounce                         |     49|
+|205   |      ctrl_tick_extend_1                |tick_extend                      |      2|
+|206   |      ctrl_tick_extend_2                |tick_extend_14                   |      1|
+|207   |      dat_one_shot                      |one_shot                         |      1|
+|208   |      u_sd_controller                   |sd_controller                    |  19348|
+|209   |        u_sd_transceiver                |sd_transceiver                   |  19146|
+|210   |          \crc16[0].crc16_dat_i         |crc__parameterized1              |     34|
+|211   |          \crc16[1].crc16_dat_i         |crc__parameterized1_15           |     32|
+|212   |          \crc16[2].crc16_dat_i         |crc__parameterized1_16           |     33|
+|213   |          \crc16[3].crc16_dat_i         |crc__parameterized1_17           |     33|
+|214   |          u_clk_en_init                 |prescaler__parameterized1        |      2|
+|215   |          u_clk_en_init2                |prescaler                        |   6993|
+|216   |          u_cmd_crc7                    |crc                              |     16|
+|217   |  U_SD_START_SYNC                       |SYNC_PULSE                       |      8|
+|218   |  U_SD_VALID_SYNC                       |SYNC_PULSE_13                    |      7|
+|219   |  U_UART_TX                             |UART_TX                          |     59|
++------+----------------------------------------+---------------------------------+-------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:42 ; elapsed = 00:10:09 . Memory (MB): peak = 3055.027 ; gain = 1861.809 ; free physical = 204 ; free virtual = 3921
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 347 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:11 ; elapsed = 00:09:28 . Memory (MB): peak = 3058.938 ; gain = 1125.625 ; free physical = 3430 ; free virtual = 7166
+Synthesis Optimization Complete : Time (s): cpu = 00:08:42 ; elapsed = 00:10:15 . Memory (MB): peak = 3058.938 ; gain = 1865.719 ; free physical = 3451 ; free virtual = 7167
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  LDC => LDCE: 1 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+633 Infos, 139 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:09:13 ; elapsed = 00:10:49 . Memory (MB): peak = 3071.035 ; gain = 1902.641 ; free physical = 3454 ; free virtual = 7205
+INFO: [Common 17-1381] The checkpoint '/home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1/WIFI_DECRYPT.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:37 . Memory (MB): peak = 3095.047 ; gain = 24.012 ; free physical = 3402 ; free virtual = 7192
+INFO: [runtcl-4] Executing : report_utilization -file WIFI_DECRYPT_utilization_synth.rpt -pb WIFI_DECRYPT_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:03 . Memory (MB): peak = 3095.047 ; gain = 0.000 ; free physical = 3389 ; free virtual = 7195
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 22 10:07:16 2018...

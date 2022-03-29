@@ -1,0 +1,1 @@
+-wto "5600bfe3825145c0b9a191f8bb43f8cc" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "TB_WIFI_DECRYPT_behav" "xil_defaultlib.TB_WIFI_DECRYPT" -log "elaborate.log" 

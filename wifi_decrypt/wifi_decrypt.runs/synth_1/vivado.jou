@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Jan 22 09:55:37 2018
+# Process ID: 1729
+# Current directory: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1
+# Command line: vivado -log WIFI_DECRYPT.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source WIFI_DECRYPT.tcl
+# Log file: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1/WIFI_DECRYPT.vds
+# Journal file: /home/ll/workdir/fpga_test/VHDL/wifi_decrypt/wifi_decrypt/wifi_decrypt.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source WIFI_DECRYPT.tcl -notrace

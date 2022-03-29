@@ -1,0 +1,29 @@
+159,164c159
+< 
+< 	attribute keep : string;
+< 	attribute keep of dat_valid : signal is "TRUE";
+< 	attribute keep of dat_tick: signal is "TRUE";
+< 	attribute keep of Start : signal is "TRUE";
+< 
+---
+> 	signal pb_start : std_logic;
+174c169
+< 		data_valid <=  dat_tick;
+---
+> 		data_valid <= dat_tick;
+178c173
+< 		dat_address <= (0 => '1', others => '0');
+---
+> 		dat_address <= (others => '0');
+180a176,182
+> 		u_debounce : debounce
+> 		port map(
+> 					rst => Rst_n,	
+> 					clk => clk,
+> 					key => Start,
+> 					tick => pb_start
+> 				);
+199d200
+< 			data_out_7 <= (others => '0');
+232d232
+< 

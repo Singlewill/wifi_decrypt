@@ -1,0 +1,127 @@
+len 0 is 3
+byte j is 0
+len is 3, len shift is 24
+len 1 is 32768
+byte j is 3
+len is 32768, len shift is 262144
+count0 is 0x40018, count1 is 0x00
+finalecount[0] is 0x00
+finalecount[1] is 0x00
+finalecount[2] is 0x00
+finalecount[3] is 0x00
+finalecount[4] is 0x00
+finalecount[5] is 0x04
+finalecount[6] is 0x00
+finalecount[7] is 0x18
+byte j is 3
+len is 1, len shift is 8
+byte j is 4
+len is 1, len shift is 8
+byte j is 5
+len is 1, len shift is 8
+byte j is 6
+len is 1, len shift is 8
+byte j is 7
+len is 1, len shift is 8
+byte j is 8
+len is 1, len shift is 8
+byte j is 9
+len is 1, len shift is 8
+byte j is 10
+len is 1, len shift is 8
+byte j is 11
+len is 1, len shift is 8
+byte j is 12
+len is 1, len shift is 8
+byte j is 13
+len is 1, len shift is 8
+byte j is 14
+len is 1, len shift is 8
+byte j is 15
+len is 1, len shift is 8
+byte j is 16
+len is 1, len shift is 8
+byte j is 17
+len is 1, len shift is 8
+byte j is 18
+len is 1, len shift is 8
+byte j is 19
+len is 1, len shift is 8
+byte j is 20
+len is 1, len shift is 8
+byte j is 21
+len is 1, len shift is 8
+byte j is 22
+len is 1, len shift is 8
+byte j is 23
+len is 1, len shift is 8
+byte j is 24
+len is 1, len shift is 8
+byte j is 25
+len is 1, len shift is 8
+byte j is 26
+len is 1, len shift is 8
+byte j is 27
+len is 1, len shift is 8
+byte j is 28
+len is 1, len shift is 8
+byte j is 29
+len is 1, len shift is 8
+byte j is 30
+len is 1, len shift is 8
+byte j is 31
+len is 1, len shift is 8
+byte j is 32
+len is 1, len shift is 8
+byte j is 33
+len is 1, len shift is 8
+byte j is 34
+len is 1, len shift is 8
+byte j is 35
+len is 1, len shift is 8
+byte j is 36
+len is 1, len shift is 8
+byte j is 37
+len is 1, len shift is 8
+byte j is 38
+len is 1, len shift is 8
+byte j is 39
+len is 1, len shift is 8
+byte j is 40
+len is 1, len shift is 8
+byte j is 41
+len is 1, len shift is 8
+byte j is 42
+len is 1, len shift is 8
+byte j is 43
+len is 1, len shift is 8
+byte j is 44
+len is 1, len shift is 8
+byte j is 45
+len is 1, len shift is 8
+byte j is 46
+len is 1, len shift is 8
+byte j is 47
+len is 1, len shift is 8
+byte j is 48
+len is 1, len shift is 8
+byte j is 49
+len is 1, len shift is 8
+byte j is 50
+len is 1, len shift is 8
+byte j is 51
+len is 1, len shift is 8
+byte j is 52
+len is 1, len shift is 8
+byte j is 53
+len is 1, len shift is 8
+byte j is 54
+len is 1, len shift is 8
+byte j is 55
+len is 1, len shift is 8
+byte j is 56
+len is 8, len shift is 64
+sha1 calc result is :
+0xa7 0x81 0xf5 0x33 0x10 0xb1 0xbd 0x0d 
+0x75 0x45 0x26 0x3b 0x48 0x40 0xd7 0xcc 
+0xa7 0xb3 0x5b 0xed 

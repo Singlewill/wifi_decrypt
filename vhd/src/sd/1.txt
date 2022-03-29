@@ -1,0 +1,139 @@
+202a203
+> library work;
+204a206
+> use work.vhdl_lib_pkg.ff_rs;
+206a209,210
+> use work.sd_pkg.sd_transceiver;
+> 
+211,212c215,216
+< 	rst					: in  std_logic;
+< 	clk					: in  std_logic;
+---
+> 	rst					: in  std_ulogic;
+> 	clk					: in  std_ulogic;
+214c218
+< 	clk_en_o		: out std_logic;
+---
+> 	clk_en_o		: out std_ulogic;
+217c221
+< 	sd_clk			: out		std_logic;
+---
+> 	sd_clk			: out		std_ulogic;
+224c228
+< 	sleep				: in  std_logic := '0';
+---
+> 	sleep				: in  std_ulogic := '0';
+234,235c238,239
+< 	dat_valid		: out std_logic;
+< 	dat_tick		: out std_logic;
+---
+> 	dat_valid		: out std_ulogic;
+> 	dat_tick		: out std_ulogic;
+257,301d260
+< 	component sd_transceiver
+< 	port(
+< 		--====================
+< 		-- System
+< 		rst					: in  std_logic;
+< 		clk					: in  std_logic;
+< 		------------------
+< 		sd_clk_en_o	: out std_logic;
+< 		--====================
+< 		-- drag through to SD-Card
+< 		sd_clk			: out		std_logic;
+< 		sd_cmd			: inout	std_logic;
+< 		sd_dat			: inout	std_logic_vector(3 downto 0);
+< 		--====================
+< 		-- I/O to unit above
+< 		------------------
+< 		sleep						: in  std_logic := '0';
+< 		fast						: in	std_logic := '0';
+< 		wide_bus				: in  std_logic := '0';
+< 		--%%%%%%%%%%%%%%%%
+< 		cmd							: in	cmd_record;
+< 		cmd_start				: in  std_logic;
+< 		cmd_fb					: out std_logic;
+< 		------------------
+< 		resp						: out cmd_record;
+< 		csd							: out csd_type;
+< 		resp_stat				: out resp_stat_type;
+< 		resp_tick				: out std_logic;
+< 		--%%%%%%%%%%%%%%%%
+< 		dat_start_read	: in  std_logic := '0';
+< 		dat_fb_read			: out std_logic;
+< 		dat_stop_read		: in  std_logic := '0';
+< 		------------------
+< 		dat_block_read	: out dat_block_type;
+< 		dat_stat_read		: out dat_stat_type;
+< 		dat_tick_read		: out std_logic;
+< 		--%%%%%%%%%%%%%%%%
+< 		status_start_read	: in  std_logic := '0';
+< 		status_width			: in  natural range 1 to 512 := 512;
+< 		status_fb_read		: out std_logic;
+< 		------------------
+< 		status_tick_read	: out std_logic
+< 		--====================
+< 	);
+< 	end component;
+327,329c286,288
+< 	signal clk_en									: std_logic;
+< 	signal sleep_sd								: std_logic;
+< 	signal fast, wide_bus					: std_logic;
+---
+> 	signal clk_en									: std_ulogic;
+> 	signal sleep_sd								: std_ulogic;
+> 	signal fast, wide_bus					: std_ulogic;
+332c291
+< 	signal cmd_start, cmd_fb			: std_logic;
+---
+> 	signal cmd_start, cmd_fb			: std_ulogic;
+334c293
+< 	signal resp_tick							: std_logic;
+---
+> 	signal resp_tick							: std_ulogic;
+339,341c298,300
+< 	signal dat_start_read					: std_logic;
+< 	signal dat_fb_read						: std_logic;
+< 	signal dat_stop_read					: std_logic;
+---
+> 	signal dat_start_read					: std_ulogic;
+> 	signal dat_fb_read						: std_ulogic;
+> 	signal dat_stop_read					: std_ulogic;
+344c303
+< 	signal dat_tick_read					: std_logic;
+---
+> 	signal dat_tick_read					: std_ulogic;
+346c305
+< 	signal status_start_read			: std_logic;
+---
+> 	signal status_start_read			: std_ulogic;
+348,349c307,308
+< 	signal status_fb_read					: std_logic;
+< 	signal status_tick_read				: std_logic;
+---
+> 	signal status_fb_read					: std_ulogic;
+> 	signal status_tick_read				: std_ulogic;
+358,364c317,323
+< 	signal rca								: std_logic_vector(15 downto 0);	-- used for all acmd commands and some other commands
+< 	signal hcs								: std_logic;											-- set by acmd41
+< 	signal vdd_voltage_window	: std_logic_vector(23 downto 0);	-- set by acmd41
+< 	signal set_cd							: std_logic;											-- enable/disable internal pull-up; acmd42
+< 	signal bus_width					: std_logic_vector(1 downto 0);	-- set by acmd6
+< 	signal sw_mode						: std_logic;											-- mode of SWITCH_FUNC cmd6
+< 	signal fg1								: std_logic_vector(3 downto 0);	-- function of function group 1 set by cmd6
+---
+> 	signal rca								: std_ulogic_vector(15 downto 0);	-- used for all acmd commands and some other commands
+> 	signal hcs								: std_ulogic;											-- set by acmd41
+> 	signal vdd_voltage_window	: std_ulogic_vector(23 downto 0);	-- set by acmd41
+> 	signal set_cd							: std_ulogic;											-- enable/disable internal pull-up; acmd42
+> 	signal bus_width					: std_ulogic_vector(1 downto 0);	-- set by acmd6
+> 	signal sw_mode						: std_ulogic;											-- mode of SWITCH_FUNC cmd6
+> 	signal fg1								: std_ulogic_vector(3 downto 0);	-- function of function group 1 set by cmd6
+370c329
+< 	signal status_reg	: std_logic_vector(511 downto 0); -- Register holding status (wide-width-data)
+---
+> 	signal status_reg	: std_ulogic_vector(511 downto 0); -- Register holding status (wide-width-data)
+372c331
+< 	signal allow_cmd_error		: std_logic;
+---
+> 	signal allow_cmd_error		: std_ulogic;
